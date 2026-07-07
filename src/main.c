@@ -452,6 +452,14 @@ int main() {
 #実行コード　./game
 
 #Github操作
+#最初の紐づけ
+# ① GitHubで使っているユーザー名（または表示名）
+#git config --global user.name "あなたのユーザー名"
+
+# ② GitHubに登録しているメールアドレス
+#git config --global user.email "あなたのメールアドレス"
+
+#これで上のアカウント上での操作ができる
 #git init このフォルダとgitを紐づける
 
 ## ① 変更したファイルをすべて「保存候補」としてまとめる
