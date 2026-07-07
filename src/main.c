@@ -447,3 +447,32 @@ int main() {
 
     return 0; // 正常終了
 }
+
+#コンパイル　gcc src/*.c -I./include -o game -lm -lSDL2
+#実行コード　./game
+
+#Github操作
+#git init このフォルダとgitを紐づける
+
+## ① 変更したファイルをすべて「保存候補」としてまとめる
+#git add .
+
+# ② どんな変更をしたか「メモ（コミットメッセージ）」をつけて確定する
+#git commit -m "ここに何を変更したかメモを書く（例: バグ修正）"
+
+# ① メインの作業ブランチ（枝）の名前を「main」に統一する
+git branch -M main
+
+# ② GitHubの空の箱のURLを、「origin」という名前で手元のGitに記憶させる（紐付け）
+git remote add origin https://github.com/あなたのユーザー名/githubで作った箱の名前.git
+
+# ③ 手元のセーブデータを、GitHubに送信する！
+git push -u origin main（次回以降はgit push origin mainでいい）
+#
+# GitHubのリポジトリURLを指定して、手元のPCに丸ごとコピーを作成します（最初のフォルダも何もない時）
+#git clone https://github.com/ユーザー名/リポジトリ名.git
+#
+#
+#
+## GitHub上の最新の変更をダウンロードし、手元のファイルに上書き（統合）する（フォルダをコピーした2回目以降）
+#git pull origin main
